@@ -1,9 +1,10 @@
 metas:
   title: =title
   description: =description
-  twitter: "@misteroom"
-  image: /avatar.jpg
-  color: "#141b1f"
-  icon: /apple-touch-icon.png
+  image: /avatar.png
+  color: "orange"
+  icon: /avatar.png
   generator: true
-  fediverse: "@lume@fosstodon.org"
+  # fediverse: ""
+  # twitter: ""
+  

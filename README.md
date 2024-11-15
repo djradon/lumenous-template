@@ -1,11 +1,11 @@
-# 🔥Lume.land
+# Lumenous Template
 
-![Lume version](https://img.shields.io/github/v/release/lumeland/lume?logo=github)
+This is a content-free and slightly de-branded version of the beautiful and functional [Lume](https://lume.land/) site. 
 
-This is the documentation site for [Lume](https://lume.land/), static site
-generator for [Deno](https://deno.land/) 🦕.
+## Responsibility
 
-## Contributing
+If you use this template, especially in a commercial capacity, please [sponsor](https://github.com/sponsors/oscarotero) or otherwise compensate the original creator, [Óscar Otero](https://oscarotero.com/). 
 
-We welcome all contributions submitted as pull requests. Before contributing
-please read the [guidelines](CONTRIBUTING.md).
+## Usage Instructions
+
+- replace 
