@@ -1,0 +1,31 @@
+{
+  "imports": {
+    "lume/": "https://deno.land/x/lume@v2.4.2/"
+  },
+  "lock": false,
+  "compilerOptions": {
+    "types": [
+      "lume/types.ts"
+    ]
+  },
+  "tasks": {
+    "build": "deno task lume",
+    "serve": "deno task lume -s",
+    "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -"
+  },
+  "lint": {
+    "exclude": [
+
+    ],
+    "rules": {
+      "tags": [
+        "recommended"
+      ]
+    }
+  },
+  "fmt": {
+    "exclude": [
+      
+    ]
+  }
+}
