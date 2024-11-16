@@ -1,6 +1,0 @@
-transformImages:
-  - resize: [50, 50]
-    format: webp
-  - resize: [100, 100]
-    suffix: "@2x"
-    format: webp

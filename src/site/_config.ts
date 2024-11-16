@@ -1,4 +1,5 @@
 import lume from "lume/mod.ts";
+import base_path from "lume/plugins/base_path.ts";
 import codeHighlight from "lume/plugins/code_highlight.ts";
 import icons from "lume/plugins/icons.ts";
 import googleFonts from "lume/plugins/google_fonts.ts";
@@ -30,7 +31,7 @@ const markdown = {
 const site = lume(
   {
     dest: "../../docs",
-    location: new URL("https://djradon.github.io/lumenous-template"),
+    location: new URL("https://djradon.github.io/lumenous-template/"),
   },
   { markdown },
 );
@@ -39,6 +40,7 @@ site
   .ignore("scripts")
   .copy("static", ".")
   .copy("_redirects")
+  .use(base_path())
   .use(codeHighlight({
     languages: {
       vento: ventoLang,

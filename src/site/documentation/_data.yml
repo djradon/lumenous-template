@@ -1,0 +1,9 @@
+layout: layouts/docs.vto
+main_menu: documentation
+docs_menu:
+  - title: First Section
+    id: first-section
+  - title: Second Section
+    id: second-section
+  - title: Third Section
+    id: third-section
