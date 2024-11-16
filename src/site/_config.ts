@@ -30,7 +30,7 @@ const markdown = {
 const site = lume(
   {
     dest: "../../docs",
-    location: new URL("https://lume.land"),
+    location: new URL("https://djradon.github.io/lumenous-template"),
   },
   { markdown },
 );
