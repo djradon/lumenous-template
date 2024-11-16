@@ -40,7 +40,6 @@ site
   .ignore("scripts")
   .copy("static", ".")
   .copy("_redirects")
-  .use(base_path())
   .use(codeHighlight({
     languages: {
       vento: ventoLang,
@@ -67,7 +66,7 @@ site
   .use(checkUrls({
     external: false,
     ignore: [
-      "/blog/",
+      "",
     ],
   }))
   .scopedUpdates(
@@ -123,6 +122,7 @@ site
       });
     }
   })
+  .use(base_path())
   .use(minifyHTML({
     options: {
       minify_css: false, // https://github.com/wilsonzlin/minify-html/issues/173
