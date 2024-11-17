@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light"><head><script type="text/javascript">
+    const root = document.firstElementChild;
+    const mediaQuery = "(prefers-color-scheme: dark)";
+    const mediaMatch = window.matchMedia;
+    const currentMode = mediaMatch(mediaQuery).matches;
+
+    const storeTheme = (targetTheme) => {
+      if ("boolean" === typeof targetTheme) {
+        targetTheme = targetTheme ? "dark" : "light";
+      }
+      root.setAttribute("data-theme", targetTheme);
+      localStorage.setItem("data-theme", targetTheme);
+    };
+
+    const storedTheme = ("data-theme" in localStorage)
+      ? localStorage.getItem("data-theme")
+      : currentMode;
+
+    storedTheme && storeTheme(storedTheme);
+  </script>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch 2 - Lume</title>
+
+    <meta name="supported-color-schemes" content="light dark">
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="anonymous">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/pagefind/pagefind-ui.css"><link rel="stylesheet" href="/styles/main.css">
+    <link rel="canonical" href="http://localhost:3000/theme/fetch-2/">
+    
+    
+      <link rel="stylesheet" href="/styles/pages/theme.css">
+    
+
+    <script src="/main.js" type="module"></script>
+
+  <link rel="icon" sizes="48x48" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" sizes="any" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fetch 2">
+<meta property="og:description" content="Fetch 2 is dynamically generated from an external data source">
+<meta property="og:url" content="http://localhost:3000/theme/fetch-2/">
+<meta property="og:image" content="http://localhost:3000/avatar.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Fetch 2 is dynamically generated from an external data source">
+<meta name="theme-color" content="orange">
+<meta name="generator" content="Lume v2.4.2">
+<script type="text/javascript" src="/pagefind/pagefind-ui.js"></script><script type="text/javascript">window.addEventListener('DOMContentLoaded',()=>{new PagefindUI({"element":"#pagefind-search","showImages":false,"excerptLength":0,"showEmptyFilters":true,"showSubResults":false,"resetStyles":true,"bundlePath":"/pagefind/","baseUrl":"/"});});</script></head>
+  <body>
+    <nav class="navbar-container">
+  <div class="navbar">
+    <a href="/" class="navbar-logo" aria-label="Return home">
+      <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 50 50" width="50" height="50">
+        <!-- Background -->
+        <rect x="0" y="0" width="50" height="50" fill="black" fill-opacity="0.0"></rect>
+
+        <!-- Central Decorative Element -->
+        <path class="blueprint_een" fill="orange" transform="translate(10, 8) scale(1.1)" d="M17.53,0.152c-0.324-0.202-0.736-0.202-1.061,0C16.124,0.368,8,5.532,8,13
+        c0,1.799,0.544,3.558,1.546,5.04l-9.253,9.253c-0.391,0.391-0.391,1.023,0,1.414l3,3C3.488,31.902,3.744,32,4,32
+        s0.512-0.098,0.707-0.293L14.714,21.7C15.465,21.899,16.231,22,17,22c4.963,0,9-4.038,9-9C26,5.532,17.876,0.368,17.53,0.152z
+        M12.712,17.996c0.122,0.28,0.292,0.543,0.52,0.772c0.229,0.229,0.493,0.399,0.773,0.521L3.854,29.439l-1.293-1.293L12.712,17.996z
+        M15,18.5c-0.4,0-0.777-0.156-1.061-0.44C13.656,17.777,13.5,17.401,13.5,17s0.156-0.777,0.44-1.06l2-2
+        c0.283-0.283,0.66-0.44,1.06-0.44s0.777,0.156,1.061,0.44c0.283,0.283,0.439,0.66,0.439,1.06s-0.156,0.777-0.44,1.06l-2,2
+        C15.777,18.344,15.4,18.5,15,18.5z M17,20c-0.667,0-1.331-0.115-1.983-0.309l0.213-0.213c0.561-0.052,1.108-0.281,1.538-0.71l2-2
+        c0.977-0.976,0.977-2.559,0-3.535C18.279,12.744,17.64,12.5,17,12.5s-1.279,0.244-1.768,0.732l-2,2
+        c-0.43,0.43-0.659,0.978-0.711,1.539l-0.828,0.828C11.052,16.599,10,15.431,10,13c0-5.35,5.285-9.563,7.001-10.79
+        C18.717,3.434,24,7.636,24,13C24,16.86,20.859,20,17,20z"></path>
+
+        <!-- Round-Cornered Border -->
+        <rect x="2" y="2" width="46" height="46" rx="8" ry="8" fill="none" stroke="grey" stroke-width="2"></rect>
+      </svg>
+
+      <span>lumenous-template</span>
+    </a>
+
+    <ul class="navbar-menu">
+      <li>
+        <a href="/documentation/">
+          Documentation
+        </a>
+      </li>
+      <li>
+        <a href="/fetch/">
+          Fetch
+        </a>
+      </li>
+      <li>
+        <a href="https://archive.org">
+          External Link
+        </a>
+      </li>
+    </ul>
+    <div class="navbar-search" id="pagefind-search"></div>
+  </div>
+</nav>
+    <div>
+      <main class="theme">
+  <div class="theme-info">
+    <nav class="theme-back">
+      <a href="/fetch/">← Back to themes</a>
+    </nav>
+    <header class="theme-header">
+      <h1 class="theme-title">
+      Fetch 2
+      </h1>
+
+      <p class="theme-author">
+        By <a href="https://djradon.github.io">@djradon</a>
+      </p>
+
+      <div class="theme-description">
+        <p>Fetch 2 is dynamically generated from an external data source</p>
+      </div>
+
+    </header>
+
+  </div>
+
+  <lume-devices class="theme-preview">
+    <form class="theme-preview-bar">
+      <div class="theme-preview-toggle">
+        <label>
+          <input type="radio" checked="" name="device" value="desktop">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 256 256" fill="currentColor" width="24" height="24"><path d="M208,40H48A24,24,0,0,0,24,64V176a24,24,0,0,0,24,24h72v16H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16H136V200h72a24,24,0,0,0,24-24V64A24,24,0,0,0,208,40ZM48,56H208a8,8,0,0,1,8,8v80H40V64A8,8,0,0,1,48,56ZM208,184H48a8,8,0,0,1-8-8V160H216v16A8,8,0,0,1,208,184Z"></path></svg>
+        </label>
+        <label>
+          <input type="radio" name="device" value="mobile">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 256 256" fill="currentColor" width="24" height="24"><path d="M176,16H80A24,24,0,0,0,56,40V216a24,24,0,0,0,24,24h96a24,24,0,0,0,24-24V40A24,24,0,0,0,176,16ZM72,64H184V192H72Zm8-32h96a8,8,0,0,1,8,8v8H72V40A8,8,0,0,1,80,32Zm96,192H80a8,8,0,0,1-8-8v-8H184v8A8,8,0,0,1,176,224Z"></path></svg>
+        </label>
+      </div>
+
+      
+      <div class="theme-preview-toggle">
+        <label>
+          <input type="radio" checked="" name="theme" value="light">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 256 256" fill="currentColor" width="24" height="24"><path d="M120,40V32a8,8,0,0,1,16,0v8a8,8,0,0,1-16,0Zm72,88a64,64,0,1,1-64-64A64.07,64.07,0,0,1,192,128Zm-16,0a48,48,0,1,0-48,48A48.05,48.05,0,0,0,176,128ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-8-8A8,8,0,0,0,50.34,61.66Zm0,116.68-8,8a8,8,0,0,0,11.32,11.32l8-8a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l8-8a8,8,0,0,0-11.32-11.32l-8,8A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l8,8a8,8,0,0,0,11.32-11.32ZM40,120H32a8,8,0,0,0,0,16h8a8,8,0,0,0,0-16Zm88,88a8,8,0,0,0-8,8v8a8,8,0,0,0,16,0v-8A8,8,0,0,0,128,208Zm96-88h-8a8,8,0,0,0,0,16h8a8,8,0,0,0,0-16Z"></path></svg>
+        </label>
+        <label>
+          <input type="radio" name="theme" value="dark">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 256 256" fill="currentColor" width="24" height="24"><path d="M233.54,142.23a8,8,0,0,0-8-2,88.08,88.08,0,0,1-109.8-109.8,8,8,0,0,0-10-10,104.84,104.84,0,0,0-52.91,37A104,104,0,0,0,136,224a103.09,103.09,0,0,0,62.52-20.88,104.84,104.84,0,0,0,37-52.91A8,8,0,0,0,233.54,142.23ZM188.9,190.34A88,88,0,0,1,65.66,67.11a89,89,0,0,1,31.4-26A106,106,0,0,0,96,56,104.11,104.11,0,0,0,200,160a106,106,0,0,0,14.92-1.06A89,89,0,0,1,188.9,190.34Z"></path></svg>
+        </label>
+      </div>
+      
+    </form>
+
+    
+    <figure>
+      <div class="device" data-device="desktop" data-theme="light">
+        <img class="" src="https://lumeland.github.io/themes/screens/simple_wiki/desktop.png">
+      </div>
+
+      
+      <div class="device" data-device="desktop" data-theme="dark">
+        <img src="https://lumeland.github.io/themes/screens/simple_wiki/desktop_dark.png">
+      </div>
+      
+
+      
+      <div class="device" data-device="mobile" data-theme="light">
+        <img src="https://lumeland.github.io/themes/screens/simple_wiki/mobile.png">
+      </div>
+      
+
+      
+      <div class="device" data-device="mobile" data-theme="dark">
+        <img src="https://lumeland.github.io/themes/screens/simple_wiki/mobile_dark.png">
+      </div>
+      
+    </figure>
+    
+  </lume-devices>
+</main>
+
+    </div>
+    <div class="footer-container">
+  <footer class="footer">
+    <ul class="footer-links">
+      <li>
+        <a href="https://github.com/djradon/lumenous-template">
+          <svg role="img" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg>
+          Github
+        </a>
+      </li>
+      <li>
+        <button style="margin-top: 10px;" class="button-theme" id="switch-theme" title="Toggle light &amp; dark theme" aria-label="auto" aria-live="polite">
+          <span class="is-light">Light theme</span>
+          <span class="is-dark">Dark theme</span>
+        </button>
+      </li>
+    </ul>
+    <!--<p class="footer-copyright"></p>-->
+  </footer>
+</div>
+
+
+    <script type="text/javascript">
+      window.addEventListener('DOMContentLoaded', () => {
+        document.getElementById("switch-theme").addEventListener("click", (event) => {
+          const currentTheme =
+            localStorage.getItem("data-theme") == "light" || (getComputedStyle(root).getPropertyValue("color-scheme") == "light");
+          storeTheme(!!currentTheme);
+        });
+
+        mediaMatch(mediaQuery).addEventListener("change", (event) => {
+          storeTheme(event.matches);
+        });
+      }, false);
+    </script>
+  
+
+</body></html>

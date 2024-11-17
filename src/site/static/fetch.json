@@ -38,6 +38,46 @@
           "mobile_dark": "/screens/simple_wiki/mobile_dark.png"
         }
       ]
+    },
+    {
+      "id": "fetch-3",
+      "name": "Fetch 3",
+      "description": "Fetch 3 is dynamically generated from an external data source",
+      "tags": ["fetch", "dynamic", "demo"],
+      "author": {
+        "name": "@djradon",
+        "url": "https://djradon.github.io"
+      },
+      "repo": "https://github.com/djradon/lumenous-template",
+      "demo": "http://djradon.github.io/lumenous-template",
+      "screens": [
+        {
+          "desktop": "/screens/simple_wiki/desktop.png",
+          "desktop_dark": "/screens/simple_wiki/desktop_dark.png",
+          "mobile": "/screens/simple_wiki/mobile.png",
+          "mobile_dark": "/screens/simple_wiki/mobile_dark.png"
+        }
+      ]
+    },
+    {
+      "id": "fetch-4",
+      "name": "Fetch 4",
+      "description": "Fetch 4 is dynamically generated from an external data source",
+      "tags": ["fetch", "dynamic", "demo"],
+      "author": {
+        "name": "@djradon",
+        "url": "https://djradon.github.io"
+      },
+      "repo": "https://github.com/djradon/lumenous-template",
+      "demo": "http://djradon.github.io/lumenous-template",
+      "screens": [
+        {
+          "desktop": "/screens/simple_wiki/desktop.png",
+          "desktop_dark": "/screens/simple_wiki/desktop_dark.png",
+          "mobile": "/screens/simple_wiki/mobile.png",
+          "mobile_dark": "/screens/simple_wiki/mobile_dark.png"
+        }
+      ]
     }
   ]
   

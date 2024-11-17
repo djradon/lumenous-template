@@ -1,47 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://djradon.github.io/lumenous-template/</loc>
+    <loc>http://localhost:3000/</loc>
     <lastmod>2024-11-15T20:29:10.718Z</lastmod>
   </url>
   <url>
-    <loc>https://djradon.github.io/lumenous-template/documentation/</loc>
+    <loc>http://localhost:3000/documentation/</loc>
     <lastmod>2024-11-15T20:29:10.488Z</lastmod>
   </url>
   <url>
-    <loc>https://djradon.github.io/lumenous-template/documentation/first-section/a/</loc>
+    <loc>http://localhost:3000/documentation/first-section/a/</loc>
     <lastmod>2024-11-15T20:29:10.488Z</lastmod>
   </url>
   <url>
-    <loc>https://djradon.github.io/lumenous-template/documentation/first-section/c/</loc>
+    <loc>http://localhost:3000/documentation/first-section/c/</loc>
     <lastmod>2024-11-15T20:29:10.488Z</lastmod>
   </url>
   <url>
-    <loc>https://djradon.github.io/lumenous-template/documentation/first-section/e/</loc>
+    <loc>http://localhost:3000/documentation/first-section/e/</loc>
     <lastmod>2024-11-15T20:29:10.488Z</lastmod>
   </url>
   <url>
-    <loc>https://djradon.github.io/lumenous-template/documentation/second-section/b/</loc>
+    <loc>http://localhost:3000/documentation/second-section/b/</loc>
     <lastmod>2024-11-15T20:29:10.488Z</lastmod>
   </url>
   <url>
-    <loc>https://djradon.github.io/lumenous-template/documentation/second-section/d/</loc>
+    <loc>http://localhost:3000/documentation/second-section/d/</loc>
     <lastmod>2024-11-15T20:29:10.488Z</lastmod>
   </url>
   <url>
-    <loc>https://djradon.github.io/lumenous-template/documentation/third-section/x/</loc>
+    <loc>http://localhost:3000/documentation/third-section/x/</loc>
     <lastmod>2024-11-15T20:29:10.488Z</lastmod>
   </url>
   <url>
-    <loc>https://djradon.github.io/lumenous-template/documentation/third-section/y/</loc>
+    <loc>http://localhost:3000/documentation/third-section/y/</loc>
     <lastmod>2024-11-15T20:29:10.488Z</lastmod>
   </url>
   <url>
-    <loc>https://djradon.github.io/lumenous-template/fetch/</loc>
+    <loc>http://localhost:3000/fetch/</loc>
     <lastmod>2024-11-15T20:29:10.718Z</lastmod>
   </url>
   <url>
-    <loc>https://djradon.github.io/lumenous-template/theme/fetch-1/</loc>
+    <loc>http://localhost:3000/theme/fetch-1/</loc>
+    <lastmod>2024-11-15T20:29:10.718Z</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:3000/theme/fetch-2/</loc>
     <lastmod>2024-11-15T20:29:10.718Z</lastmod>
   </url>
 </urlset>

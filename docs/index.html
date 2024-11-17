@@ -30,33 +30,32 @@
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="anonymous">
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="/lumenous-template/styles/main.css">
-    <link rel="canonical" href="https://djradon.github.io/lumenous-template/">
+    <link rel="stylesheet" href="/pagefind/pagefind-ui.css"><link rel="stylesheet" href="/styles/main.css">
+    <link rel="canonical" href="http://localhost:3000/">
     
     
-      <link rel="stylesheet" href="/lumenous-template/styles/pages/landing.css">
+      <link rel="stylesheet" href="/styles/pages/landing.css">
     
 
-    <script src="/lumenous-template/main.js" type="module"></script>
+    <script src="/main.js" type="module"></script>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3.2.1/dist/style.css" integrity="sha256-brWyd+lKlaU/B5Lhqd/FUXyZQu4rVmbFRsP2E8S2CLw=" crossorigin="anonymous">
-  <link rel="icon" sizes="48x48" href="/lumenous-template/favicon.ico">
-<link rel="apple-touch-icon" sizes="180x180" href="/lumenous-template/apple-touch-icon.png">
-<link rel="icon" sizes="any" href="/lumenous-template/favicon.svg" type="image/svg+xml">
+  <link rel="icon" sizes="48x48" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" sizes="any" href="/favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
 <meta property="og:title" content="lumenous-template">
 <meta property="og:description" content="A [Lume](https://lume.land) theme based on the beautiful">
-<meta property="og:url" content="https://djradon.github.io/lumenous-template/">
-<meta property="og:image" content="https://djradon.github.io/lumenous-template/avatar.png">
+<meta property="og:url" content="http://localhost:3000/">
+<meta property="og:image" content="http://localhost:3000/avatar.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="description" content="A [Lume](https://lume.land) theme based on the beautiful">
 <meta name="theme-color" content="orange">
 <meta name="generator" content="Lume v2.4.2">
-</head>
+<script type="text/javascript" src="/pagefind/pagefind-ui.js"></script><script type="text/javascript">window.addEventListener('DOMContentLoaded',()=>{new PagefindUI({"element":"#pagefind-search","showImages":false,"excerptLength":0,"showEmptyFilters":true,"showSubResults":false,"resetStyles":true,"bundlePath":"/pagefind/","baseUrl":"/"});});</script></head>
   <body>
     <nav class="navbar-container">
   <div class="navbar">
-    <a href="/lumenous-template/" class="navbar-logo" aria-label="Return home">
+    <a href="/" class="navbar-logo" aria-label="Return home">
       <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 50 50" width="50" height="50">
         <!-- Background -->
         <rect x="0" y="0" width="50" height="50" fill="black" fill-opacity="0.0"></rect>
@@ -82,12 +81,12 @@
 
     <ul class="navbar-menu">
       <li>
-        <a href="/lumenous-template/documentation/">
+        <a href="/documentation/">
           Documentation
         </a>
       </li>
       <li>
-        <a href="/lumenous-template/fetch/">
+        <a href="/fetch/">
           Fetch
         </a>
       </li>
@@ -97,7 +96,7 @@
         </a>
       </li>
     </ul>
-    <div class="navbar-search" id="search">Search</div>
+    <div class="navbar-search" id="pagefind-search"></div>
   </div>
 </nav>
     <div>
@@ -397,8 +396,6 @@ git commit -m " initial="" commit="" from="" lumenous-template"="" #="" add="" a
 </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3.2.1/dist/umd/index.js" integrity="sha256-7XYP2JLQrbyOqBKrAn8sT3l8PG/v2j6C3A5EyBDp9to=" crossorigin="anonymous" defer=""></script>
-      
     <script type="text/javascript">
       window.addEventListener('DOMContentLoaded', () => {
         document.getElementById("switch-theme").addEventListener("click", (event) => {
@@ -409,14 +406,6 @@ git commit -m " initial="" commit="" from="" lumenous-template"="" #="" add="" a
 
         mediaMatch(mediaQuery).addEventListener("change", (event) => {
           storeTheme(event.matches);
-        });
-
-        docsearch({
-          appId: "O7U42EOTRQ",
-          apiKey: "bcb89a19824e0100724bc16011dea6f8",
-          indexName: "lume",
-          container: document.getElementById("search"),
-          debug: false
         });
       }, false);
     </script>

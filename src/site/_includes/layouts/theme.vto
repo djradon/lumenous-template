@@ -11,10 +11,6 @@ page_css: theme.css
     <header class="theme-header">
       <h1 class="theme-title">
       {{ title }}
-
-      {{ if it.module.cms }}
-      <span class="tag is-small">Has CMS</span>
-      {{ /if }}
       </h1>
 
       <p class="theme-author">
@@ -25,25 +21,8 @@ page_css: theme.css
         {{ description |> md }}
       </div>
 
-      <lume-shield data-name="{{ it.module.id }}"></lume-shield>
     </header>
 
-    <div class="theme-install">
-      <p>Create project with this theme:</p>
-      <div class="terminal">
-        {{ set code = `deno run -A https://lume.land/init.ts --theme=${id}` }}
-        <pre><code>{{ code }}</code><lume-copy class="terminal-copy"><button data-text="{{ code }}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256"><path d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32ZM160,208H48V96H160Zm48-48H176V88a8,8,0,0,0-8-8H96V48H208Z"></path></svg></button></lume-copy></pre>
-      </div>
-    </div>
-
-    <div class="theme-buttons">
-      <a class="button is-primary is-big" href="{{ demo }}" target="_blank">
-        Open a live demo ↗
-      </a>
-      <a class="button is-secondary is-big" href="{{ repo }}" target="_blank">
-        See code ↗
-      </a>
-    </div>
   </div>
 
   <lume-devices class="theme-preview">

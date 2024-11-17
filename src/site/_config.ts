@@ -20,6 +20,7 @@ import analyze, {
 } from "https://deno.land/x/aldara@v0.2.1/mod.ts";
 import { alert } from "npm:@mdit/plugin-alert@0.8.0";
 import ventoLang from "https://deno.land/x/vento@v0.10.2/highlightjs-vento.js";
+import pagefind from "lume/plugins/pagefind.ts";
 
 const markdown = {
   plugins: [toc, alert],
@@ -117,6 +118,14 @@ site
     }
   })
   .use(base_path())
+  .use(pagefind({
+    ui: {
+      containerId: "pagefind-search",
+      showImages: false,
+      showEmptyFilters: true,
+      resetStyles: true,
+    }
+  }))
   .use(checkUrls({
     external: false,
     ignore: [

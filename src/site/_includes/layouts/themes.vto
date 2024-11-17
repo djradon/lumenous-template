@@ -19,9 +19,6 @@ page_css: themes.css
         <figcaption class="site-description">
           <p>
             <a class="site-name" href="{{ theme.url }}">{{ theme.name }}</a>
-            {{ if theme.module.cms }}
-            <span class="tag is-small">Has CMS</span>
-            {{ /if }}
           </p>
 
           {{ theme.description |> md }}

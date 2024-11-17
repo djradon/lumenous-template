@@ -2,4 +2,4 @@ layout: layouts/themes.vto
 title: Fetch
 main_menu: fetch
 description: |
-  You can use the Fetch API to access external data. For example, you could retrieve image URLs and links for blog posts from a headless CMS, or semantic data from a SPARQL server or events from a flat file. Server-side access means you don't have to expose API credentials!
+  You can use the Fetch API to access external data. For example, you could retrieve image URLs and links for blog posts from a headless CMS, semantic data from a SPARQL server, or events from a flat file.

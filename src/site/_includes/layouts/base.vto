@@ -40,11 +40,6 @@
 
     <script src="/main.js" type="module"></script>
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@docsearch/css@3.2.1/dist/style.css"
-      integrity="sha256-brWyd+lKlaU/B5Lhqd/FUXyZQu4rVmbFRsP2E8S2CLw="
-      crossorigin="anonymous">
   </head>
   <body>
     {{ include "templates/navbar.vto" }}
@@ -53,11 +48,6 @@
     </div>
     {{ include "templates/footer.vto" }}
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/@docsearch/js@3.2.1/dist/umd/index.js"
-      integrity="sha256-7XYP2JLQrbyOqBKrAn8sT3l8PG/v2j6C3A5EyBDp9to="
-      crossorigin="anonymous" defer></script>
-      
     <script type="text/javascript">
       window.addEventListener('DOMContentLoaded', () => {
         document.getElementById("switch-theme").addEventListener("click", (event) => {
@@ -68,14 +58,6 @@
 
         mediaMatch(mediaQuery).addEventListener("change", (event) => {
           storeTheme(event.matches);
-        });
-
-        docsearch({
-          appId: "O7U42EOTRQ",
-          apiKey: "bcb89a19824e0100724bc16011dea6f8",
-          indexName: "lume",
-          container: document.getElementById("search"),
-          debug: false
         });
       }, false);
     </script>
