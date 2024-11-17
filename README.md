@@ -15,3 +15,9 @@ If you use this template, especially in a commercial capacity, please [sponsor](
   - if you change the filenames, make sure to update the metas info in /_data.yml
 - update other metadata values in /_data.yml
 - replace the <svg> in _includes/templates/navbar.vto
+
+## Pagefind
+
+- Unlike the original site, lumenous-template uses Pagefind for search functionality
+- If you want to exclude a page from the index, use `noIndex: true` in the .yml or frontmatter
+  - see 404.yml or documentation/third-section/x.md for examples
