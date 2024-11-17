@@ -8,7 +8,7 @@ import resolveUrls from "lume/plugins/resolve_urls.ts";
 import esbuild from "lume/plugins/esbuild.ts";
 import transformImages from "lume/plugins/transform_images.ts";
 import favicon from "lume/plugins/favicon.ts";
-import minifyHTML from "lume/plugins/minify_html.ts";
+//import minifyHTML from "lume/plugins/minify_html.ts";
 import postcss from "lume/plugins/postcss.ts";
 import nesting from "npm:postcss-nesting";
 import sitemap from "lume/plugins/sitemap.ts";
@@ -63,12 +63,6 @@ site
   .use(transformImages())
   .use(sitemap())
   .use(icons())
-  .use(checkUrls({
-    external: false,
-    ignore: [
-      "",
-    ],
-  }))
   .scopedUpdates(
     (path) => path.endsWith(".png") || path.endsWith(".jpg"),
   )
@@ -123,11 +117,18 @@ site
     }
   })
   .use(base_path())
-  .use(minifyHTML({
+  .use(checkUrls({
+    external: false,
+    ignore: [
+      "",
+    ],
+  }))
+  /*.use(minifyHTML({
     options: {
       minify_css: false, // https://github.com/wilsonzlin/minify-html/issues/173
     },
-  }));
+  }))*/
+  ;
 
 site.data("scheme", async (mod: string) => {
   try {

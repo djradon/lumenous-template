@@ -5,9 +5,9 @@ page_css: landing.css
 <div class="landing">
   <header class="landing-header">
     <h1>{{ header.title }}</h1>
-    A content-free templated version of https://lume.land
+    <div class="landing-header-description">{{ header.description |> md }}</div>
 
-    <!--<div class="landing-install">
+    <div class="landing-install">
       {{ install.title |> md }}
 
       <div class="terminal">
@@ -17,7 +17,28 @@ page_css: landing.css
         </a>
       </div>
 
-    </div>-->
+    </div>
   </header>
+  <section class="landing-usage">
+  {{ for block of usage }}
+    <div class="landing-usage-text">
+      <h2>{{ block.title }}</h2>
+      {{ block.description |> md }}
+    </div>
+    <div class="landing-usage-code">
+      {{ block.code |> md }}
+    </div>
+  {{ /for }}
+  </section>
+
+  <ul class="landing-features">
+    {{ for feature of features }}
+    <li>
+      <img src="{{ feature.img }}" inline>
+      <h3>{{ feature.title }}</h3>
+      {{ feature.description |> md }}
+    </li>
+    {{ /for }}
+  </ul>
 
 </div>

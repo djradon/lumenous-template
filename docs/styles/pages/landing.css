@@ -29,20 +29,20 @@
 .landing-header {
     display: grid;
     grid-template-columns: minmax(620px, 1fr) 1fr;
-    grid-template-areas: "title fire" "install fire" "companies companies";
+    grid-template-areas: "title description" "install install" "companies companies";
     row-gap: var(--row-gap-0);
 }
   }
-.landing-header-fire {
+.landing-header-description {
   margin: 0;
   padding: 0;
-  grid-area: fire;
+  grid-area: description;
   align-self: end;
   justify-self: center;
 }
 @media (min-width: 1000px) {
-.landing-header-fire {
-    font-size: min(2.5vw, 30px);
+.landing-header-description {
+    font-size: min(2.5vw, 20px);
 }
   }
 .landing-header-companies {
@@ -106,7 +106,7 @@
     margin: 5px 0;
   }
 .landing-install .terminal pre {
-    max-width: 400px;
+    max-width: 1000px;
   }
 /** Usage */
 .landing-usage-text {
@@ -162,10 +162,10 @@
     color: var(--color-foreground);
   }
 .landing-features svg {
-    display: block;
+    display: inline;
     margin: 0 0 1em;
-    width: 150px;
-    height: 150px;
+    width: 90px;
+    height: 90px;
     opacity: 0.9;
   }
 /** Examples */

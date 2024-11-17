@@ -1,1 +1,425 @@
-<!doctype html><html data-theme=light lang=en><script>const root=document.firstElementChild;const mediaQuery=`(prefers-color-scheme: dark)`;const mediaMatch=window.matchMedia;const currentMode=mediaMatch(mediaQuery).matches;const storeTheme=a=>{let b=`data-theme`;if(`boolean`===typeof a){a=a?`dark`:`light`};root.setAttribute(b,a);localStorage.setItem(b,a)};const storedTheme=`data-theme` in localStorage?localStorage.getItem(`data-theme`):currentMode;storedTheme&&storeTheme(storedTheme)</script><meta charset=UTF-8><meta content="IE=edge"http-equiv=X-UA-Compatible><meta content="width=device-width,initial-scale=1.0"name=viewport><title>lumenous-template - Lume</title><meta content="light dark"name=supported-color-schemes><link crossorigin href=https://cdn.jsdelivr.net rel=preconnect><link crossorigin href=https://cdn.jsdelivr.net rel=dns-prefetch><link href=/lumenous-template/styles/main.css rel=stylesheet><link href=https://djradon.github.io/lumenous-template/ rel=canonical><link href=/lumenous-template/styles/pages/landing.css rel=stylesheet><script src=/lumenous-template/main.js type=module></script><link integrity="sha256-brWyd+lKlaU/B5Lhqd/FUXyZQu4rVmbFRsP2E8S2CLw="crossorigin href=https://cdn.jsdelivr.net/npm/@docsearch/css@3.2.1/dist/style.css rel=stylesheet><link href=/lumenous-template/favicon.ico rel=icon sizes=48x48><link href=/lumenous-template/apple-touch-icon.png rel=apple-touch-icon sizes=180x180><link href=/lumenous-template/favicon.svg rel=icon sizes=any type=image/svg+xml><meta content=website property=og:type><meta content=lumenous-template property=og:title><meta content="A [Lume](https://lume.land) theme based on the beautiful"property=og:description><meta content=https://djradon.github.io/lumenous-template/ property=og:url><meta content=https://djradon.github.io/lumenous-template/avatar.png property=og:image><meta content=summary_large_image name=twitter:card><meta content="A [Lume](https://lume.land) theme based on the beautiful"name=description><meta content=orange name=theme-color><meta content="Lume v2.4.2"name=generator><body><nav class=navbar-container><div class=navbar><a aria-label="Return home"class=navbar-logo href=/lumenous-template/> <svg viewbox="0 0 50 50"height=50 width=50 xmlns=http://www.w3.org/2000/svg><rect fill=black fill-opacity=0.0 height=50 width=50 x=0 y=0></rect><path d="M17.53,0.152c-0.324-0.202-0.736-0.202-1.061,0C16.124,0.368,8,5.532,8,13 c0,1.799,0.544,3.558,1.546,5.04l-9.253,9.253c-0.391,0.391-0.391,1.023,0,1.414l3,3C3.488,31.902,3.744,32,4,32 s0.512-0.098,0.707-0.293L14.714,21.7C15.465,21.899,16.231,22,17,22c4.963,0,9-4.038,9-9C26,5.532,17.876,0.368,17.53,0.152z M12.712,17.996c0.122,0.28,0.292,0.543,0.52,0.772c0.229,0.229,0.493,0.399,0.773,0.521L3.854,29.439l-1.293-1.293L12.712,17.996z M15,18.5c-0.4,0-0.777-0.156-1.061-0.44C13.656,17.777,13.5,17.401,13.5,17s0.156-0.777,0.44-1.06l2-2 c0.283-0.283,0.66-0.44,1.06-0.44s0.777,0.156,1.061,0.44c0.283,0.283,0.439,0.66,0.439,1.06s-0.156,0.777-0.44,1.06l-2,2 C15.777,18.344,15.4,18.5,15,18.5z M17,20c-0.667,0-1.331-0.115-1.983-0.309l0.213-0.213c0.561-0.052,1.108-0.281,1.538-0.71l2-2 c0.977-0.976,0.977-2.559,0-3.535C18.279,12.744,17.64,12.5,17,12.5s-1.279,0.244-1.768,0.732l-2,2 c-0.43,0.43-0.659,0.978-0.711,1.539l-0.828,0.828C11.052,16.599,10,15.431,10,13c0-5.35,5.285-9.563,7.001-10.79 C18.717,3.434,24,7.636,24,13C24,16.86,20.859,20,17,20z"transform="translate(10, 8) scale(1.1)"class=blueprint_een fill=orange></path><rect fill=none height=46 rx=8 ry=8 stroke=white stroke-width=2 width=46 x=2 y=2></rect></svg> <span>lumenous-template</span> </a><ul class=navbar-menu><li><a href=/lumenous-template/documentation/> Documentation </a><li><a href=/lumenous-template/fetch/> Fetch </a><li><a href=https://archive.org> External Link </a></ul><div class=navbar-search id=search>Search</div></div></nav><div><div class=landing><header class=landing-header><h1>lumenous-template</h1> A content-free templated version of https://lume.land </header></div></div><div class=footer-container><footer class=footer><ul class=footer-links><li><a href=https://github.com/lumeland> <svg viewbox="0 0 24 24"role=img xmlns=http://www.w3.org/2000/svg><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg> Github </a><li><button style="margin-top: 10px;"title="Toggle light & dark theme"aria-label=auto aria-live=polite class=button-theme id=switch-theme><span class=is-light>Light theme</span> <span class=is-dark>Dark theme</span></button></ul></footer></div><script integrity="sha256-7XYP2JLQrbyOqBKrAn8sT3l8PG/v2j6C3A5EyBDp9to="crossorigin defer src=https://cdn.jsdelivr.net/npm/@docsearch/js@3.2.1/dist/umd/index.js></script><script>window.addEventListener(`DOMContentLoaded`,()=>{let a=`light`;document.getElementById(`switch-theme`).addEventListener(`click`,b=>{const c=localStorage.getItem(`data-theme`)==a||getComputedStyle(root).getPropertyValue(`color-scheme`)==a;storeTheme(!!c)});mediaMatch(mediaQuery).addEventListener(`change`,a=>{storeTheme(a.matches)});docsearch({appId:`O7U42EOTRQ`,apiKey:`bcb89a19824e0100724bc16011dea6f8`,indexName:`lume`,container:document.getElementById(`search`),debug:!1})},!1)</script>
+<!DOCTYPE html>
+<html lang="en" data-theme="light"><head><script type="text/javascript">
+    const root = document.firstElementChild;
+    const mediaQuery = "(prefers-color-scheme: dark)";
+    const mediaMatch = window.matchMedia;
+    const currentMode = mediaMatch(mediaQuery).matches;
+
+    const storeTheme = (targetTheme) => {
+      if ("boolean" === typeof targetTheme) {
+        targetTheme = targetTheme ? "dark" : "light";
+      }
+      root.setAttribute("data-theme", targetTheme);
+      localStorage.setItem("data-theme", targetTheme);
+    };
+
+    const storedTheme = ("data-theme" in localStorage)
+      ? localStorage.getItem("data-theme")
+      : currentMode;
+
+    storedTheme && storeTheme(storedTheme);
+  </script>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lumenous-template - Lume</title>
+
+    <meta name="supported-color-schemes" content="light dark">
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="anonymous">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/lumenous-template/styles/main.css">
+    <link rel="canonical" href="https://djradon.github.io/lumenous-template/">
+    
+    
+      <link rel="stylesheet" href="/lumenous-template/styles/pages/landing.css">
+    
+
+    <script src="/lumenous-template/main.js" type="module"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3.2.1/dist/style.css" integrity="sha256-brWyd+lKlaU/B5Lhqd/FUXyZQu4rVmbFRsP2E8S2CLw=" crossorigin="anonymous">
+  <link rel="icon" sizes="48x48" href="/lumenous-template/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/lumenous-template/apple-touch-icon.png">
+<link rel="icon" sizes="any" href="/lumenous-template/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="lumenous-template">
+<meta property="og:description" content="A [Lume](https://lume.land) theme based on the beautiful">
+<meta property="og:url" content="https://djradon.github.io/lumenous-template/">
+<meta property="og:image" content="https://djradon.github.io/lumenous-template/avatar.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="A [Lume](https://lume.land) theme based on the beautiful">
+<meta name="theme-color" content="orange">
+<meta name="generator" content="Lume v2.4.2">
+</head>
+  <body>
+    <nav class="navbar-container">
+  <div class="navbar">
+    <a href="/lumenous-template/" class="navbar-logo" aria-label="Return home">
+      <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 50 50" width="50" height="50">
+        <!-- Background -->
+        <rect x="0" y="0" width="50" height="50" fill="black" fill-opacity="0.0"></rect>
+
+        <!-- Central Decorative Element -->
+        <path class="blueprint_een" fill="orange" transform="translate(10, 8) scale(1.1)" d="M17.53,0.152c-0.324-0.202-0.736-0.202-1.061,0C16.124,0.368,8,5.532,8,13
+        c0,1.799,0.544,3.558,1.546,5.04l-9.253,9.253c-0.391,0.391-0.391,1.023,0,1.414l3,3C3.488,31.902,3.744,32,4,32
+        s0.512-0.098,0.707-0.293L14.714,21.7C15.465,21.899,16.231,22,17,22c4.963,0,9-4.038,9-9C26,5.532,17.876,0.368,17.53,0.152z
+        M12.712,17.996c0.122,0.28,0.292,0.543,0.52,0.772c0.229,0.229,0.493,0.399,0.773,0.521L3.854,29.439l-1.293-1.293L12.712,17.996z
+        M15,18.5c-0.4,0-0.777-0.156-1.061-0.44C13.656,17.777,13.5,17.401,13.5,17s0.156-0.777,0.44-1.06l2-2
+        c0.283-0.283,0.66-0.44,1.06-0.44s0.777,0.156,1.061,0.44c0.283,0.283,0.439,0.66,0.439,1.06s-0.156,0.777-0.44,1.06l-2,2
+        C15.777,18.344,15.4,18.5,15,18.5z M17,20c-0.667,0-1.331-0.115-1.983-0.309l0.213-0.213c0.561-0.052,1.108-0.281,1.538-0.71l2-2
+        c0.977-0.976,0.977-2.559,0-3.535C18.279,12.744,17.64,12.5,17,12.5s-1.279,0.244-1.768,0.732l-2,2
+        c-0.43,0.43-0.659,0.978-0.711,1.539l-0.828,0.828C11.052,16.599,10,15.431,10,13c0-5.35,5.285-9.563,7.001-10.79
+        C18.717,3.434,24,7.636,24,13C24,16.86,20.859,20,17,20z"></path>
+
+        <!-- Round-Cornered Border -->
+        <rect x="2" y="2" width="46" height="46" rx="8" ry="8" fill="none" stroke="black" stroke-width="2"></rect>
+      </svg>
+
+      <span>lumenous-template</span>
+    </a>
+
+    <ul class="navbar-menu">
+      <li>
+        <a href="/lumenous-template/documentation/">
+          Documentation
+        </a>
+      </li>
+      <li>
+        <a href="/lumenous-template/fetch/">
+          Fetch
+        </a>
+      </li>
+      <li>
+        <a href="https://archive.org">
+          External Link
+        </a>
+      </li>
+    </ul>
+    <div class="navbar-search" id="search">Search</div>
+  </div>
+</nav>
+    <div>
+      <div class="landing">
+  <header class="landing-header">
+    <h1>lumenous-template</h1>
+    <div class="landing-header-description"><p>A content-free Lume site template, adapted from <a href="https://lume.land">https://lume.land</a>.  Lorem ipsum odor amet, consectetuer adipiscing elit. Aptent dis libero nam inceptos fringilla nulla. Senectus ipsum at facilisi aliquam dolor commodo libero. Congue luctus egestas eros ut ex maximus sed cubilia. Nibh turpis adipiscing augue cursus orci torquent neque etiam.</p></div>
+
+    <div class="landing-install">
+      <p>Get started by <a href="https://github.com/new?template_name=lumenous-template&amp;template_owner=djradon">using this template</a> or from the command line:</p>
+
+      <div class="terminal">
+        <pre><code># Clone the template repository to your local machine
+git clone https://github.com/djradon/lumenous-template.git my-new-project
+
+# Navigate into the newly cloned directory
+cd my-new-project
+
+# Remove the Git history from the template repository
+rm -rf .git
+
+# Initialize a new Git repository
+git init
+
+# Stage and commit all the files from the template
+git add .
+git commit -m "Initial commit from lumenous-template"
+
+# Add a new remote repository (replace with your new repository's URL)
+git remote add origin https://github.com/your-username/my-new-project.git
+
+# Push the files to the new repository
+git push -u origin main
+<lume-copy class="terminal-copy"><button data-text="# Clone the template repository to your local machine
+git clone https://github.com/djradon/lumenous-template.git my-new-project
+
+# Navigate into the newly cloned directory
+cd my-new-project
+
+# Remove the Git history from the template repository
+rm -rf .git
+
+# Initialize a new Git repository
+git init
+
+# Stage and commit all the files from the template
+git add .
+git commit -m " initial="" commit="" from="" lumenous-template"="" #="" add="" a="" new="" remote="" repository="" (replace="" with="" your="" repository's="" url)="" git="" origin="" https:="" github.com="" your-username="" my-new-project.git="" push="" the="" files="" to="" -u="" main="" "=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 256 256"><path d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32ZM160,208H48V96H160Zm48-48H176V88a8,8,0,0,0-8-8H96V48H208Z"></path></svg></button></lume-copy></code></pre>
+        <a class="terminal-cta" href="https://github.com/djradon/lumenous-template" aria-label="Continue to Getting Started">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 256 256" fill="currentColor" width="30" height="30"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path></svg>
+        </a>
+      </div>
+
+    </div>
+  </header>
+  <section class="landing-usage">
+  
+    <div class="landing-usage-text">
+      <h2>Usage 1</h2>
+      <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Aptent dis libero nam inceptos fringilla nulla. Senectus ipsum at facilisi aliquam dolor commodo libero.</p>
+    </div>
+    <div class="landing-usage-code">
+      <lume-code><ul role="tablist" aria-label="Code Tabs" class="lume-code-menu"><li role="presentation"><button role="tab" aria-selected="true" aria-controls="panel-1-1" id="tab-1-1" tabindex="0" class="lume-code-tab is-active">page.md</button></li><li role="presentation"><button role="tab" aria-selected="false" aria-controls="panel-1-2" id="tab-1-2" tabindex="-1" class="lume-code-tab">page.vto</button></li><li role="presentation"><button role="tab" aria-selected="false" aria-controls="panel-1-3" id="tab-1-3" tabindex="-1" class="lume-code-tab">page.njk</button></li><li role="presentation"><button role="tab" aria-selected="false" aria-controls="panel-1-4" id="tab-1-4" tabindex="-1" class="lume-code-tab">page.jsx</button></li><li role="presentation"><button role="tab" aria-selected="false" aria-controls="panel-1-5" id="tab-1-5" tabindex="-1" class="lume-code-tab">page.page.js</button></li><li role="presentation"><button role="tab" aria-selected="false" aria-controls="panel-1-6" id="tab-1-6" tabindex="-1" class="lume-code-tab">page.page.ts</button></li><li role="presentation"><button role="tab" aria-selected="false" aria-controls="panel-1-7" id="tab-1-7" tabindex="-1" class="lume-code-tab">page.pug</button></li><li role="presentation"><button role="tab" aria-selected="false" aria-controls="panel-1-8" id="tab-1-8" tabindex="-1" class="lume-code-tab">page.eta</button></li></ul>
+<pre role="tabpanel" aria-labelledby="tab-1-1" id="panel-1-1" tabindex="0"><code title="page.md" class="language-md hljs language-markdown"><span class="hljs-section"># Galician municipalities</span>
+
+<span class="hljs-bullet">-</span> O Pino
+<span class="hljs-bullet">-</span> Tordoia
+<span class="hljs-bullet">-</span> Ordes
+<span class="hljs-bullet">-</span> Cedeira
+</code></pre>
+<pre hidden="true" role="tabpanel" aria-labelledby="tab-1-2" id="panel-1-2" tabindex="0"><code title="page.vto" class="language-vento hljs"><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>{{</span><span class="language-javascript"> title </span><span class="language-xml">}}<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  {{</span><span class="language-javascript"> <span class="hljs-keyword">for</span> item <span class="hljs-keyword">of</span> items </span><span class="language-xml">}}
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>{{</span><span class="language-javascript"> item </span><span class="language-xml">}}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  {{</span><span class="language-javascript"> /<span class="hljs-keyword">for</span> </span><span class="language-xml">}}
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</span></code></pre>
+<pre hidden="true" role="tabpanel" aria-labelledby="tab-1-3" id="panel-1-3" tabindex="0"><code title="page.njk" class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>{{ title }}<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  {% for item in items %}
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>{{ item }}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  {% endfor %}
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+<pre hidden="true" role="tabpanel" aria-labelledby="tab-1-4" id="panel-1-4" tabindex="0"><code title="page.jsx" class="language-jsx hljs language-javascript"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">function</span> (<span class="hljs-params">{ title, items }</span>) {
+  <span class="hljs-keyword">return</span> <span class="language-xml"><span class="hljs-tag">&lt;&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>{ title }<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+      { items.map((item) =&gt; <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>{ item }<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>)}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;/&gt;</span></span>;
+}
+</code></pre>
+<pre hidden="true" role="tabpanel" aria-labelledby="tab-1-5" id="panel-1-5" tabindex="0"><code title="page.page.js" class="language-js hljs language-javascript"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">function</span> (<span class="hljs-params">{ title, items }</span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-string">`
+  &lt;h1&gt;<span class="hljs-subst">${ title }</span>&lt;/h1&gt;
+
+  &lt;ul&gt;
+    <span class="hljs-subst">${ items.map((item) =&gt; <span class="hljs-string">`&lt;li&gt;<span class="hljs-subst">${ item }</span>&lt;/li&gt;`</span>)}</span>
+  &lt;/ul&gt;
+  `</span>;
+}
+</code></pre>
+<pre hidden="true" role="tabpanel" aria-labelledby="tab-1-6" id="panel-1-6" tabindex="0"><code title="page.page.ts" class="language-ts hljs language-typescript"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">Data</span> {
+  <span class="hljs-attr">title</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">items</span>: <span class="hljs-built_in">string</span>[];
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">function</span> (<span class="hljs-params">{ title, items }: <span class="hljs-title class_">Data</span></span>): <span class="hljs-built_in">string</span> {
+  <span class="hljs-keyword">return</span> <span class="hljs-string">`
+  &lt;h1&gt;<span class="hljs-subst">${ title }</span>&lt;/h1&gt;
+
+  &lt;ul&gt;
+    <span class="hljs-subst">${ items.map((item) =&gt; <span class="hljs-string">`&lt;li&gt;<span class="hljs-subst">${ item }</span>&lt;/li&gt;`</span>)}</span>
+  &lt;/ul&gt;
+  `</span>;
+}
+</code></pre>
+<pre hidden="true" role="tabpanel" aria-labelledby="tab-1-7" id="panel-1-7" tabindex="0"><code title="page.pug" class="language-yml hljs language-yaml"><span class="hljs-string">h1=</span> <span class="hljs-string">title</span>
+<span class="hljs-string">ul</span>
+  <span class="hljs-string">each</span> <span class="hljs-string">item</span> <span class="hljs-string">in</span> <span class="hljs-string">items</span>
+    <span class="hljs-string">li=</span> <span class="hljs-string">item</span>
+</code></pre>
+<pre hidden="true" role="tabpanel" aria-labelledby="tab-1-8" id="panel-1-8" tabindex="0"><code title="page.eta" class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>&lt;%= title %&gt;<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+&lt;% for (const item of items) { %&gt;
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>&lt;%= item %&gt;<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+&lt;% }) %&gt;
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+</lume-code>
+    </div>
+  
+    <div class="landing-usage-text">
+      <h2>Usage 2</h2>
+      <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Aptent dis libero nam inceptos fringilla nulla. Senectus ipsum at facilisi aliquam dolor commodo libero.</p>
+    </div>
+    <div class="landing-usage-code">
+      <lume-code><ul role="tablist" aria-label="Code Tabs" class="lume-code-menu"><li role="presentation"><button role="tab" aria-selected="true" aria-controls="panel-2-1" id="tab-2-1" tabindex="0" class="lume-code-tab is-active">_data.yml</button></li><li role="presentation"><button role="tab" aria-selected="false" aria-controls="panel-2-2" id="tab-2-2" tabindex="-1" class="lume-code-tab">_data.json</button></li><li role="presentation"><button role="tab" aria-selected="false" aria-controls="panel-2-3" id="tab-2-3" tabindex="-1" class="lume-code-tab">_data.js</button></li><li role="presentation"><button role="tab" aria-selected="false" aria-controls="panel-2-4" id="tab-2-4" tabindex="-1" class="lume-code-tab">_data.ts</button></li></ul>
+<pre role="tabpanel" aria-labelledby="tab-2-1" id="panel-2-1" tabindex="0"><code title="_data.yml" class="language-yaml hljs"><span class="hljs-attr">title:</span> <span class="hljs-string">Galician</span> <span class="hljs-string">municipalities</span>
+<span class="hljs-attr">items:</span>
+  <span class="hljs-bullet">-</span> <span class="hljs-string">O</span> <span class="hljs-string">Pino</span>
+  <span class="hljs-bullet">-</span> <span class="hljs-string">Tordoia</span>
+  <span class="hljs-bullet">-</span> <span class="hljs-string">Ordes</span>
+  <span class="hljs-bullet">-</span> <span class="hljs-string">Cedeira</span>
+</code></pre>
+<pre hidden="true" role="tabpanel" aria-labelledby="tab-2-2" id="panel-2-2" tabindex="0"><code title="_data.json" class="language-json hljs"><span class="hljs-punctuation">{</span>
+  <span class="hljs-attr">"title"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"Galician municipalities"</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"items"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+    <span class="hljs-string">"O Pino"</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-string">"Tordoia"</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-string">"Ordes"</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-string">"Cedeira"</span>
+  <span class="hljs-punctuation">]</span>
+<span class="hljs-punctuation">}</span>
+</code></pre>
+<pre hidden="true" role="tabpanel" aria-labelledby="tab-2-3" id="panel-2-3" tabindex="0"><code title="_data.js" class="language-js hljs language-javascript"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> title = <span class="hljs-string">"Galician municipalities"</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> items = [
+  <span class="hljs-string">"O Pino"</span>,
+  <span class="hljs-string">"Tordoia"</span>,
+  <span class="hljs-string">"Ordes"</span>,
+  <span class="hljs-string">"Cedeira"</span>
+];
+</code></pre>
+<pre hidden="true" role="tabpanel" aria-labelledby="tab-2-4" id="panel-2-4" tabindex="0"><code title="_data.ts" class="language-ts hljs language-typescript"><span class="hljs-keyword">const</span> title = <span class="hljs-string">"Galician municipalities"</span>;
+
+<span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">"https://example.com/galician-minicipalities.json"</span>);
+<span class="hljs-keyword">const</span> items = (<span class="hljs-keyword">await</span> response.<span class="hljs-title function_">json</span>()) <span class="hljs-keyword">as</span> <span class="hljs-built_in">string</span>[];
+<span class="hljs-keyword">export</span> { title, items };
+</code></pre>
+</lume-code>
+    </div>
+  
+  </section>
+
+  <ul class="landing-features">
+    
+    <li>
+      <svg width="401" height="401" viewbox="0 0 401 401" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_180_24)">
+<circle cx="200.99" cy="200.811" r="200" fill="url(#paint0_angular_180_24)"></circle>
+<circle cx="200.99" cy="200.811" r="124.999" fill="#BF4040"></circle>
+<g style="mix-blend-mode:multiply">
+<circle cx="200.99" cy="200.811" r="54" fill="#BF4040"></circle>
+</g>
+</g>
+<defs>
+<radialgradient id="paint0_angular_180_24" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(200.99 200.811) rotate(90) scale(200)">
+<stop stop-color="#BF4040"></stop>
+<stop offset="1" stop-color="#FBDB90"></stop>
+</radialgradient>
+<clippath id="clip0_180_24">
+<rect width="401" height="401" fill="white"></rect>
+</clippath>
+</defs>
+</svg>
+      <h3>Feature 1</h3>
+      <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Aptent dis libero nam inceptos fringilla nulla. Senectus ipsum at facilisi aliquam dolor commodo libero. Congue luctus egestas eros ut ex maximus sed cubilia. Nibh turpis adipiscing augue cursus orci torquent neque etiam. Iaculis taciti duis natoque consequat rhoncus enim metus non condimentum.</p>
+    </li>
+    
+    <li>
+      <svg width="401" height="401" viewbox="0 0 401 401" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_180_24)">
+<circle cx="200.99" cy="200.811" r="200" fill="url(#paint0_angular_180_24)"></circle>
+<circle cx="200.99" cy="200.811" r="124.999" fill="#BF4040"></circle>
+<g style="mix-blend-mode:multiply">
+<circle cx="200.99" cy="200.811" r="54" fill="#BF4040"></circle>
+</g>
+</g>
+<defs>
+<radialgradient id="paint0_angular_180_24" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(200.99 200.811) rotate(90) scale(200)">
+<stop stop-color="#BF4040"></stop>
+<stop offset="1" stop-color="#FBDB90"></stop>
+</radialgradient>
+<clippath id="clip0_180_24">
+<rect width="401" height="401" fill="white"></rect>
+</clippath>
+</defs>
+</svg>
+      <h3>Feature 2</h3>
+      <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Aptent dis libero nam inceptos fringilla nulla. Senectus ipsum at facilisi aliquam dolor commodo libero. Congue luctus egestas eros ut ex maximus sed cubilia. Nibh turpis adipiscing augue cursus orci torquent neque etiam.</p>
+    </li>
+    
+    <li>
+      <svg width="401" height="401" viewbox="0 0 401 401" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_180_24)">
+<circle cx="200.99" cy="200.811" r="200" fill="url(#paint0_angular_180_24)"></circle>
+<circle cx="200.99" cy="200.811" r="124.999" fill="#BF4040"></circle>
+<g style="mix-blend-mode:multiply">
+<circle cx="200.99" cy="200.811" r="54" fill="#BF4040"></circle>
+</g>
+</g>
+<defs>
+<radialgradient id="paint0_angular_180_24" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(200.99 200.811) rotate(90) scale(200)">
+<stop stop-color="#BF4040"></stop>
+<stop offset="1" stop-color="#FBDB90"></stop>
+</radialgradient>
+<clippath id="clip0_180_24">
+<rect width="401" height="401" fill="white"></rect>
+</clippath>
+</defs>
+</svg>
+      <h3>Feature 3</h3>
+      <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Aptent dis libero nam inceptos fringilla nulla. Senectus ipsum at facilisi aliquam dolor commodo libero.</p>
+    </li>
+    
+    <li>
+      <svg width="401" height="401" viewbox="0 0 401 401" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_180_24)">
+<circle cx="200.99" cy="200.811" r="200" fill="url(#paint0_angular_180_24)"></circle>
+<circle cx="200.99" cy="200.811" r="124.999" fill="#BF4040"></circle>
+<g style="mix-blend-mode:multiply">
+<circle cx="200.99" cy="200.811" r="54" fill="#BF4040"></circle>
+</g>
+</g>
+<defs>
+<radialgradient id="paint0_angular_180_24" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(200.99 200.811) rotate(90) scale(200)">
+<stop stop-color="#BF4040"></stop>
+<stop offset="1" stop-color="#FBDB90"></stop>
+</radialgradient>
+<clippath id="clip0_180_24">
+<rect width="401" height="401" fill="white"></rect>
+</clippath>
+</defs>
+</svg>
+      <h3>Feature 4</h3>
+      <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Aptent dis libero nam inceptos fringilla nulla. Senectus ipsum at facilisi aliquam dolor commodo libero. Congue luctus egestas eros ut ex maximus sed cubilia. Nibh turpis adipiscing augue cursus orci torquent neque etiam.</p>
+    </li>
+    
+  </ul>
+
+</div>
+
+    </div>
+    <div class="footer-container">
+  <footer class="footer">
+    <ul class="footer-links">
+      <li>
+        <a href="https://github.com/djradon/lumenous-template">
+          <svg role="img" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg>
+          Github
+        </a>
+      </li>
+      <li>
+        <button style="margin-top: 10px;" class="button-theme" id="switch-theme" title="Toggle light &amp; dark theme" aria-label="auto" aria-live="polite">
+          <span class="is-light">Light theme</span>
+          <span class="is-dark">Dark theme</span>
+        </button>
+      </li>
+    </ul>
+    <!--<p class="footer-copyright"></p>-->
+  </footer>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3.2.1/dist/umd/index.js" integrity="sha256-7XYP2JLQrbyOqBKrAn8sT3l8PG/v2j6C3A5EyBDp9to=" crossorigin="anonymous" defer=""></script>
+      
+    <script type="text/javascript">
+      window.addEventListener('DOMContentLoaded', () => {
+        document.getElementById("switch-theme").addEventListener("click", (event) => {
+          const currentTheme =
+            localStorage.getItem("data-theme") == "light" || (getComputedStyle(root).getPropertyValue("color-scheme") == "light");
+          storeTheme(!!currentTheme);
+        });
+
+        mediaMatch(mediaQuery).addEventListener("change", (event) => {
+          storeTheme(event.matches);
+        });
+
+        docsearch({
+          appId: "O7U42EOTRQ",
+          apiKey: "bcb89a19824e0100724bc16011dea6f8",
+          indexName: "lume",
+          container: document.getElementById("search"),
+          debug: false
+        });
+      }, false);
+    </script>
+  
+
+</body></html>

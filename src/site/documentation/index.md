@@ -1,7 +1,9 @@
 ---
 title: Documentation
-description: This section demonstrates a dynamic-generated left-navbar and internal TOC.
+description: This section demonstrates a dynamically-generated left-navbar and internal TOC.
 ---
+
+
 
 ## First Heading
 
