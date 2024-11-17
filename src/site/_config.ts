@@ -50,7 +50,7 @@ site
   }))
   .use(googleFonts({
     fonts:
-      "https://fonts.google.com/share?selection.family=Epilogue:ital,wght@0,100..900;1,100..900|Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900|JetBrains+Mono:ital,wght@0,100..800;1,100..800",
+      "https://fonts.google.com/share?selection.family=Epilogue:ital,wght@0,100..900;1,100..900|Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900|JetBrains+Mono:ital,wght@0,100..800;1,100..800|Newsreader:ital,wght@0,100..900;1,100..900",
     cssFile: "/styles/main.css",
   }))
   .use(favicon())

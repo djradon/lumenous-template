@@ -17,20 +17,27 @@
           "mobile": "/screens/simple_wiki/mobile.png",
           "mobile_dark": "/screens/simple_wiki/mobile_dark.png"
         }
-      ],
-      "module": {
-        "name": "wiki",
-        "id": "denoland/lume_theme_simple_wiki",
-        "origin": "https://deno.land/x/lume_theme_simple_wiki",
-        "main": "/mod.ts",
-        "cms": "/_cms.ts",
-        "srcdir": "/src",
-        "src": [
-          "/index.md",
-          "/404.md",
-          "/favicon.svg"
-        ]
-      }
+      ]
+    },
+    {
+      "id": "fetch-2",
+      "name": "Fetch 2",
+      "description": "Fetch 2 is dynamically generated from an external data source",
+      "tags": ["fetch", "dynamic", "demo"],
+      "author": {
+        "name": "@djradon",
+        "url": "https://djradon.github.io"
+      },
+      "repo": "https://github.com/djradon/lumenous-template",
+      "demo": "http://djradon.github.io/lumenous-template",
+      "screens": [
+        {
+          "desktop": "/screens/simple_wiki/desktop.png",
+          "desktop_dark": "/screens/simple_wiki/desktop_dark.png",
+          "mobile": "/screens/simple_wiki/mobile.png",
+          "mobile_dark": "/screens/simple_wiki/mobile_dark.png"
+        }
+      ]
     }
   ]
   

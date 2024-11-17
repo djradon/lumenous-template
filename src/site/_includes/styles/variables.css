@@ -33,9 +33,9 @@
 
   /* Colors */
   /* Tokens */
-  --color-red-400: hsl(0deg, 50%, 40%);
-  --color-red-500: hsl(0deg, 50%, 50%);
-  --color-red-600: hsl(0deg, 70%, 60%);
+  --color-orange-400: hsl(25deg, 50%, 40%);
+  --color-orange-500: hsl(25deg, 50%, 50%);
+  --color-orange-600: hsl(25deg, 70%, 60%);
   --color-white: hsl(280deg, 10%, 100%);
   --color-white-alpha: hsla(280deg, 10%, 100%, 0.9);
   --color-black-970: hsl(280deg, 10%, 97%);
@@ -90,8 +90,8 @@
 /* Theme light mode */
 :root[data-theme="light"] {
   color-scheme: light;
-  --color-primary: var(--color-red-500);
-  --color-primary-1: var(--color-red-400);
+  --color-primary: var(--color-orange-500);
+  --color-primary-1: var(--color-orange-400);
   --color-foreground: var(--color-black-100);
   --color-foreground-1: var(--color-black-240);
   --color-background: var(--color-white);
@@ -104,8 +104,8 @@
 /* Theme dark mode */
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --color-primary: var(--color-red-600);
-  --color-primary-1: var(--color-red-400);
+  --color-primary: var(--color-orange-600);
+  --color-primary-1: var(--color-orange-400);
   --color-foreground: var(--color-white);
   --color-foreground-1: var(--color-black-800);
   --color-background: var(--color-black-100);
