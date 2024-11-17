@@ -48,4 +48,12 @@
     <loc>http://localhost:3000/theme/fetch-2/</loc>
     <lastmod>2024-11-15T20:29:10.718Z</lastmod>
   </url>
+  <url>
+    <loc>http://localhost:3000/theme/fetch-3/</loc>
+    <lastmod>2024-11-15T20:29:10.718Z</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:3000/theme/fetch-4/</loc>
+    <lastmod>2024-11-15T20:29:10.718Z</lastmod>
+  </url>
 </urlset>

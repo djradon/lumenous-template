@@ -69,16 +69,24 @@
 
 .pagefind-ui__drawer {
   /* General styles */
-  backdrop-filter: blur(5px); /* Optional: Add a slight blur effect */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  padding: 16px; /* Space inside the drawer */
-  z-index: 1000; /* Ensure it overlays other elements */
-  max-width: 600px; /* Limit width for readability */
- 
-  /* Centering styles */
-  position: absolute; /* Allows flexible positioning */
-  
+  backdrop-filter: blur(5px);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  z-index: 1000;
+  max-width: 600px;
+  width: 90%;
+
+  /* Centering and placement */
+  position: fixed; /* Ensures it's tied to the viewport, not a parent */
+  top: calc(100% + 16px); /* Positioned below the search box */
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* Scrolling and overflow */
+  max-height: 80vh; /* Prevents it from exceeding the viewport height */
+  overflow-y: auto; /* Enables scrolling for overflowing content */
+  background-color: var(--color-background-a); /* Semi-transparent background */
 }
 
 /* Light theme specific adjustments */

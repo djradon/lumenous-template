@@ -43,7 +43,11 @@
   </head>
   <body>
     {{ include "templates/navbar.vto" }}
+    {{ if noIndex  }}
     <div>
+    {{ else }}
+    <div data-pagefind-body>
+    {{ /if }}
       {{ content }}
     </div>
     {{ include "templates/footer.vto" }}
