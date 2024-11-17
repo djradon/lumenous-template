@@ -21,6 +21,8 @@ import analyze, {
 import { alert } from "npm:@mdit/plugin-alert@0.8.0";
 import ventoLang from "https://deno.land/x/vento@v0.10.2/highlightjs-vento.js";
 import pagefind from "lume/plugins/pagefind.ts";
+import redirects from "lume/plugins/redirects.ts";
+
 
 const markdown = {
   plugins: [toc, alert],
@@ -40,7 +42,7 @@ const site = lume(
 site
   .ignore("scripts")
   .copy("static", ".")
-  .copy("_redirects")
+  /*.copy("_redirects") */ // only for netlify
   .use(codeHighlight({
     languages: {
       vento: ventoLang,
@@ -126,6 +128,7 @@ site
       resetStyles: true,
     }
   }))
+  .use(redirects())
   .use(checkUrls({
     external: false,
     ignore: [
@@ -139,19 +142,5 @@ site
   }))*/
   ;
 
-site.data("scheme", async (mod: string) => {
-  try {
-    const url = `https://deno.land/x/lume@v2.4.2/${mod}`;
-    const { defaults } = await import(url);
-    const { Options } = await analyze(url, { maxDepth: 2, private: false });
-
-    mergeDefaults(Options, defaults);
-    return Options.children;
-  } catch (error) {
-    console.log(`Error generating the documentation for ${mod}`);
-    console.log(error);
-    return [];
-  }
-});
 
 export default site;

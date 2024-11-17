@@ -23,7 +23,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>x - Lume</title>
+    <title>Documentation - Lume</title>
 
     <meta name="supported-color-schemes" content="light dark">
 
@@ -31,7 +31,7 @@
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" crossorigin="anonymous">
 
     <link rel="stylesheet" href="/lumenous-template/pagefind/pagefind-ui.css"><link rel="stylesheet" href="/lumenous-template/styles/main.css">
-    <link rel="canonical" href="https://djradon.github.io/lumenous-template/documentation/third-section/x/">
+    <link rel="canonical" href="https://djradon.github.io/lumenous-template/documentation/first-section/documentation/">
     
     
       <link rel="stylesheet" href="/lumenous-template/styles/pages/docs.css">
@@ -43,12 +43,12 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/lumenous-template/apple-touch-icon.png">
 <link rel="icon" sizes="any" href="/lumenous-template/favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
-<meta property="og:title" content="x">
-<meta property="og:description" content="x">
-<meta property="og:url" content="https://djradon.github.io/lumenous-template/documentation/third-section/x/">
+<meta property="og:title" content="Documentation">
+<meta property="og:description" content="How to make this site your own">
+<meta property="og:url" content="https://djradon.github.io/lumenous-template/documentation/first-section/documentation/">
 <meta property="og:image" content="https://djradon.github.io/lumenous-template/avatar.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="description" content="x">
+<meta name="description" content="How to make this site your own">
 <meta name="theme-color" content="orange">
 <meta name="generator" content="Lume v2.4.2">
 <script type="text/javascript" src="/lumenous-template/pagefind/pagefind-ui.js"></script><script type="text/javascript">window.addEventListener('DOMContentLoaded',()=>{new PagefindUI({"element":"#pagefind-search","showImages":false,"excerptLength":0,"showEmptyFilters":true,"showSubResults":false,"resetStyles":true,"bundlePath":"/lumenous-template/pagefind/","baseUrl":"/lumenous-template/"});});</script></head>
@@ -100,12 +100,12 @@
   </div>
 </nav>
     
-    <div>
+    <div data-pagefind-body="">
     
       <div class="doc">
   <nav class="doc-navbar">
   
-  <details class="doc-navbar-section">
+  <details class="doc-navbar-section" open="">
     <summary>
       <span class="doc-navbar-section-title">First Section</span>
     </summary>
@@ -113,7 +113,7 @@
       
         <li>
           
-          <a href="/lumenous-template/documentation/first-section/documentation/" title="How to make this site your own">Documentation</a>
+          <a href="/lumenous-template/documentation/first-section/documentation/" aria-current="page" title="How to make this site your own">Documentation</a>
           
         </li>
       
@@ -159,7 +159,7 @@
     </ul>
   </details>
   
-  <details class="doc-navbar-section" open="">
+  <details class="doc-navbar-section">
     <summary>
       <span class="doc-navbar-section-title">Third Section</span>
     </summary>
@@ -167,7 +167,7 @@
       
         <li>
           
-          <a href="/lumenous-template/documentation/third-section/x/" aria-current="page" title="x">x</a>
+          <a href="/lumenous-template/documentation/third-section/x/" title="x">x</a>
           
         </li>
       
@@ -187,15 +187,125 @@
 
   <main class="doc-content">
     <header class="doc-header">
-      <h1>x</h1>
-      <p>x</p>
+      <h1>Documentation</h1>
+      <p>How to make this site your own</p>
 
       
+<nav class="toc">
+  <ol>
+    
+    <li>
+      <a href="#what-is-lumenous-template%3F">What is lumenous-template?</a>
+      
+    </li>
+    
+    <li>
+      <a href="#responsibility">Responsibility</a>
+      
+    </li>
+    
+    <li>
+      <a href="#usage-instructions">Usage Instructions</a>
+      
+      <ul>
+        
+        <li>
+          <a href="#re-branding">Re-branding</a>
+        </li>
+        
+        <li>
+          <a href="#re-configuration">Re-configuration</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li>
+      <a href="#changes-from-%40lumeland%2Flume.land">Changes from @lumeland/lume.land</a>
+      
+      <ul>
+        
+        <li>
+          <a href="#themes--%3E-fetch">Themes -&gt; Fetch</a>
+        </li>
+        
+        <li>
+          <a href="#cms--%3E-documentation">CMS -&gt; Documentation</a>
+        </li>
+        
+        <li>
+          <a href="#docsearch%2Falgolia--%3E-pagefind">Docsearch/Algolia -&gt; Pagefind</a>
+        </li>
+        
+        <li>
+          <a href="#removals">Removals</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+  </ol>
+</nav>
+
 
     </header>
 
     <div class="doc-body">
-      <p>This page uses <code>noIndex: true</code> in the frontmatter to exclude itself from indexing</p>
+      <h2 id="what-is-lumenous-template%3F" tabindex="-1"><a href="#what-is-lumenous-template%3F" class="header-anchor">What is lumenous-template?</a></h2>
+<p>This template repo is a content-free and slightly de-branded version of the beautiful and functional <a href="https://lume.land/">Lume</a> site.</p>
+<h2 id="responsibility" tabindex="-1"><a href="#responsibility" class="header-anchor">Responsibility</a></h2>
+<p>If you use this template, especially in a commercial capacity, please <a href="https://github.com/sponsors/oscarotero">sponsor</a> or otherwise compensate the original creator, <a href="https://oscarotero.com/">Óscar Otero</a>.</p>
+<h2 id="usage-instructions" tabindex="-1"><a href="#usage-instructions" class="header-anchor">Usage Instructions</a></h2>
+<h3 id="re-branding" tabindex="-1"><a href="#re-branding" class="header-anchor">Re-branding</a></h3>
+<p>You're going to want some SVG code. Try <a href="https://www.svgviewer.dev">https://www.svgviewer.dev</a> if you don't already have something.</p>
+<ul>
+<li>replace /src/site/favicon.svg with your own</li>
+<li>in /src/site/navbar.vto replace the "<!-- Central Decorative Element -->" <svg> with your own.</svg></li>
+<li>in /static, replace avatar.png and logo.png
+<ul>
+<li>if you change the filenames, make sure to update the metas info in /_data.yml</li>
+</ul>
+</li>
+</ul>
+<h3 id="re-configuration" tabindex="-1"><a href="#re-configuration" class="header-anchor">Re-configuration</a></h3>
+<ul>
+<li>in /src/_config.ts:
+<ul>
+<li>set your URL instead of <code>location: new URL("https://djradon.github.io/lumenous-template"),</code>
+<ul>
+<li>or remove the line altogether if your site isn't published under a subdirectory</li>
+<li>see <a href="https://lume.land/docs/configuration/config-file/#location">the lume docs</a> for more details</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>update other metadata values in /_data.yml</li>
+<li>replace the <svg> in _includes/templates/navbar.vto</svg></li>
+</ul>
+<h2 id="changes-from-%40lumeland%2Flume.land" tabindex="-1"><a href="#changes-from-%40lumeland%2Flume.land" class="header-anchor">Changes from @lumeland/lume.land</a></h2>
+<h3 id="themes--%3E-fetch" tabindex="-1"><a href="#themes--%3E-fetch" class="header-anchor">Themes -&gt; Fetch</a></h3>
+<p>I wanted to generify the "Themes" area, so renamed some files from <code>theme*</code> to <code>fetch</code>. But a lot of the internal references still say <code>theme</code>. Confusing.</p>
+<h3 id="cms--%3E-documentation" tabindex="-1"><a href="#cms--%3E-documentation" class="header-anchor">CMS -&gt; Documentation</a></h3>
+<ul>
+<li>I find it potentially confusing to use "docs" as a directory name for any purpose other than to hold the generated site for auto-hosting via "classic" github pages.</li>
+</ul>
+<h3 id="docsearch%2Falgolia--%3E-pagefind" tabindex="-1"><a href="#docsearch%2Falgolia--%3E-pagefind" class="header-anchor">Docsearch/Algolia -&gt; Pagefind</a></h3>
+<ul>
+<li>Unlike the original site, lumenous-template uses Pagefind for search functionality</li>
+<li>If you want to exclude a page from the index, use <code>noIndex: true</code> in the .yml or frontmatter
+<ul>
+<li>see 404.yml or documentation/third-section/x.md for examples</li>
+</ul>
+</li>
+</ul>
+<h3 id="removals" tabindex="-1"><a href="#removals" class="header-anchor">Removals</a></h3>
+<p>Aside from removing almost all of lume-specific text (hopefully) and almost all of the existing graphics, I removed:</p>
+<ul>
+<li>the "<a href="https://lume.land/showcase/">Showcase</a>" section because it seemed like a static version "Themes" (now "Fetch").</li>
+<li></li>
+</ul>
 
 
       
@@ -203,17 +313,10 @@
 
     <footer class="doc-footer">
       <ul class="doc-pagination">
-        <li class="is-prev">
-          <a href="/lumenous-template/documentation/second-section/d/" rel="prev">
-            ← Previous 
-            <strong>d</strong>
-          </a>
-        </li>
-        
         <li class="is-next">
-          <a href="/lumenous-template/documentation/third-section/y/" rel="next">
+          <a href="/lumenous-template/documentation/first-section/a/" rel="next">
             Next → 
-            <strong>y</strong>
+            <strong>a</strong>
           </a>
         </li>
         

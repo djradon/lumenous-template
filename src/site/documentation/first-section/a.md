@@ -1,6 +1,8 @@
 ---
 title: a
 description: a
-order: 1
+order: 10
+related:
+  - /documentation/second-section/b/
 ---
 

@@ -34,7 +34,7 @@ page_css: docs.css
 
     <footer class="doc-footer">
       <ul class="doc-pagination">
-        {{- set previousPost = search.previousPage(url, "url^=/docs/", "section_order order title") }}
+        {{- set previousPost = search.previousPage(url, "url^=/documentation/", "section_order order title") }}
         {{- if previousPost }}
         <li class="is-prev">
           <a href="{{ previousPost.url }}" rel="prev">
@@ -44,7 +44,7 @@ page_css: docs.css
         </li>
         {{ /if }}
 
-        {{- set nextPost = search.nextPage(url, "url^=/docs/", "section_order order title") }}
+        {{- set nextPost = search.nextPage(url, "url^=/documentation/", "section_order order title") }}
         {{- if nextPost }}
         <li class="is-next">
           <a href="{{ nextPost.url }}" rel="next">

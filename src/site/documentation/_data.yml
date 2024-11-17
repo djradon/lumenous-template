@@ -1,4 +1,4 @@
-layout: layouts/docs.vto
+layout: layouts/documentation.vto
 main_menu: documentation
 docs_menu:
   - title: First Section

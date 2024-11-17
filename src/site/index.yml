@@ -6,7 +6,7 @@ header:
   description: A content-free Lume site template, adapted from [https://lume.land](https://lume.land).  Lorem ipsum odor amet, consectetuer adipiscing elit. Aptent dis libero nam inceptos fringilla nulla. Senectus ipsum at facilisi aliquam dolor commodo libero. Congue luctus egestas eros ut ex maximus sed cubilia. Nibh turpis adipiscing augue cursus orci torquent neque etiam.
 
 install:
-  title: "Get started by [using this template](https://github.com/new?template_name=lumenous-template&template_owner=djradon) or from the command line:"
+  title: "Get started by [using this template repo](https://github.com/new?template_name=lumenous-template&template_owner=djradon) or from the command line:"
   code:
   - |
     # Clone the template repository to your local machine

@@ -1,8 +1,8 @@
 ---
 title: x
 description: x
-order: 1
 noIndex: true
+order: 60
 ---
 
 This page uses `noIndex: true` in the frontmatter to exclude itself from indexing

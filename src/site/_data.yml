@@ -3,7 +3,7 @@ metas:
   description: =description
   image: /avatar.png
   color: "orange"
-  icon: /avatar.png
+  icon: /apple-touch-icon.png
   generator: true
   # fediverse: ""
   # twitter: ""
