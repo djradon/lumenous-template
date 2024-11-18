@@ -6,5 +6,7 @@
   "deno.suggest.imports.hosts": {
     "https://deno.land": true
   },
-  "workbench.startupEditor": "readme"
+  "workbench.startupEditor": "readme",
+  "editor.defaultFormatter": "denoland.vscode-deno",
+  "editor.formatOnSave": true
 }
