@@ -22,7 +22,7 @@ import { alert } from "npm:@mdit/plugin-alert@0.8.0";
 import ventoLang from "https://deno.land/x/vento@v0.10.2/highlightjs-vento.js";
 import pagefind from "lume/plugins/pagefind.ts";
 import redirects from "lume/plugins/redirects.ts";
-
+import multiSourcePlugin from "./multiSourcePlugin.ts";
 
 const markdown = {
   plugins: [toc, alert],
@@ -33,13 +33,21 @@ const markdown = {
 
 const site = lume(
   {
-    dest: "../../docs",
+    dest: "docs",
+    src: "_combined",
     location: new URL("https://djradon.github.io/lumenous-template/"),
   },
   { markdown },
 );
 
 site
+  .use(multiSourcePlugin([
+    {
+      url: "https://github.com/djradon/lumenous-template/",
+      localPath: "lumenous-template",
+      include: ["demo", "lumenous-template"],
+    },
+  ]))
   .ignore("scripts")
   .copy("static", ".")
   /*.copy("_redirects") */ // only for netlify

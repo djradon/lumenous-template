@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:3000/</loc>
-    <lastmod>2024-11-15T20:29:10.718Z</lastmod>
+    <lastmod>2024-11-18T22:02:03.673Z</lastmod>
   </url>
   <url>
     <loc>http://localhost:3000/documentation/</loc>
@@ -12,54 +12,54 @@
   </url>
   <url>
     <loc>http://localhost:3000/documentation/first-section/a/</loc>
-    <lastmod>2024-11-15T20:29:10.488Z</lastmod>
+    <lastmod>2024-11-18T22:02:03.683Z</lastmod>
   </url>
   <url>
     <loc>http://localhost:3000/documentation/first-section/c/</loc>
-    <lastmod>2024-11-15T20:29:10.488Z</lastmod>
+    <lastmod>2024-11-18T22:02:03.683Z</lastmod>
   </url>
   <url>
     <loc>http://localhost:3000/documentation/first-section/documentation/</loc>
-    <lastmod>2024-11-15T20:29:10.488Z</lastmod>
+    <lastmod>2024-11-18T22:02:03.683Z</lastmod>
   </url>
   <url>
     <loc>http://localhost:3000/documentation/first-section/e/</loc>
-    <lastmod>2024-11-15T20:29:10.488Z</lastmod>
+    <lastmod>2024-11-18T22:02:03.683Z</lastmod>
   </url>
   <url>
     <loc>http://localhost:3000/documentation/second-section/b/</loc>
-    <lastmod>2024-11-15T20:29:10.488Z</lastmod>
+    <lastmod>2024-11-18T22:02:03.683Z</lastmod>
   </url>
   <url>
     <loc>http://localhost:3000/documentation/second-section/d/</loc>
-    <lastmod>2024-11-15T20:29:10.488Z</lastmod>
+    <lastmod>2024-11-18T22:02:03.683Z</lastmod>
   </url>
   <url>
     <loc>http://localhost:3000/documentation/third-section/x/</loc>
-    <lastmod>2024-11-15T20:29:10.488Z</lastmod>
+    <lastmod>2024-11-18T22:02:03.683Z</lastmod>
   </url>
   <url>
     <loc>http://localhost:3000/documentation/third-section/y/</loc>
-    <lastmod>2024-11-15T20:29:10.488Z</lastmod>
+    <lastmod>2024-11-18T22:02:03.683Z</lastmod>
   </url>
   <url>
     <loc>http://localhost:3000/fetch/</loc>
-    <lastmod>2024-11-15T20:29:10.718Z</lastmod>
+    <lastmod>2024-11-18T22:02:03.673Z</lastmod>
   </url>
   <url>
     <loc>http://localhost:3000/theme/fetch-1/</loc>
-    <lastmod>2024-11-15T20:29:10.718Z</lastmod>
+    <lastmod>2024-11-18T22:02:03.673Z</lastmod>
   </url>
   <url>
     <loc>http://localhost:3000/theme/fetch-2/</loc>
-    <lastmod>2024-11-15T20:29:10.718Z</lastmod>
+    <lastmod>2024-11-18T22:02:03.673Z</lastmod>
   </url>
   <url>
     <loc>http://localhost:3000/theme/fetch-3/</loc>
-    <lastmod>2024-11-15T20:29:10.718Z</lastmod>
+    <lastmod>2024-11-18T22:02:03.673Z</lastmod>
   </url>
   <url>
     <loc>http://localhost:3000/theme/fetch-4/</loc>
-    <lastmod>2024-11-15T20:29:10.718Z</lastmod>
+    <lastmod>2024-11-18T22:02:03.673Z</lastmod>
   </url>
 </urlset>
