@@ -1,36 +1,14 @@
 layout: layouts/landing.vto
-title: lumenous-template
-description: A [Lume](https://lume.land) theme based on the beautiful
+title: demo-index
+description: demo-index description
 header:
-  title: lumenous-template
-  description: A content-free Lume site template, adapted from [https://lume.land](https://lume.land).
+  title: demo-header-title
+  description: Lorem ipsum odor amet, consectetuer adipiscing elit. Aptent dis libero nam inceptos fringilla nulla. Senectus ipsum at facilisi aliquam dolor commodo libero. Congue luctus egestas eros ut ex maximus sed cubilia. Nibh turpis adipiscing augue cursus orci torquent neque etiam.
 
 install:
-  title: "Get started by [using this template repo](https://github.com/new?template_name=lumenous-template&template_owner=djradon) or from the command line:"
-  code:
-    - |
-        # Clone the template repository to your local machine
-        git clone https://github.com/djradon/lumenous-template.git my-new-project
-
-        # Navigate into the newly cloned directory
-        cd my-new-project
-
-        # Remove the Git history from the template repository
-        rm -rf .git
-
-        # Initialize a new Git repository
-        git init
-
-        # Stage and commit all the files from the template
-        git add .
-        git commit -m "Initial commit from lumenous-template"
-
-        # Add a new remote repository (replace with your new repository's URL)
-        git remote add origin https://github.com/your-username/my-new-project.git
-
-        # Push the files to the new repository
-        git push -u origin main
-  url: https://github.com/djradon/lumenous-template
+  title: "Install Title"
+  code: https://github.com/djradon/lumenous-template/demo
+  url: https://github.com/djradon/lumenous-template/demo
 
 usage:
   - title: Usage 1
@@ -39,44 +17,15 @@ usage:
     code: |
       <lume-code>
 
-      ```md { title="page.md" }
-      # Galician municipalities
-
-      - O Pino
-      - Tordoia
-      - Ordes
-      - Cedeira
+      ```md { title="towns.md" }
+      # Central Albertan municipalities
+      - Olds  
+      - Didsbury
+      - Carstairs
+      - Sundre
+      - Bowden
       ```
-      ```vento { title="page.vto" }
-      <h1>{{ title }}</h1>
-
-      <ul>
-        {{ for item of items }}
-        <li>{{ item }}</li>
-        {{ /for }}
-      </ul>
-      ```
-      ```html { title="page.njk" }
-      <h1>{{ title }}</h1>
-
-      <ul>
-        {% for item in items %}
-        <li>{{ item }}</li>
-        {% endfor %}
-      </ul>
-      ```
-      ```jsx { title="page.jsx" }
-      export default function ({ title, items }) {
-        return <>
-          <h1>{ title }</h1>
-
-          <ul>
-            { items.map((item) => <li>{ item }</li>)}
-          </ul>
-        </>;
-      }
-      ```
-      ```js { title="page.page.js" }
+      ```js { title="towns.page.js" }
       export default function ({ title, items }) {
         return `
         <h1>${ title }</h1>
