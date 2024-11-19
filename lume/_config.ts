@@ -64,6 +64,7 @@ site
   .ignore("scripts", repoDir)
   .copy("static", ".")
   /*.copy("_redirects") */ // only for netlify
+  .use(base_path())
   .use(codeHighlight({
     languages: {
       vento: ventoLang,
